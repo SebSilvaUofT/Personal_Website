@@ -11,25 +11,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Sebastian Silva - Biomedical Engineering',
+  title: 'Sebastian Silva - Biomedical Engineer',
   description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  metadataBase: new URL('https://sebastiansilva.com'),
+  openGraph: {
+    title: 'Sebastian Silva - Biomedical Engineering',
+    description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sebastian Silva - Biomedical Engineering',
+    description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
   },
 }
 
