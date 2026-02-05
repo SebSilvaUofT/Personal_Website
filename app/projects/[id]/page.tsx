@@ -12,8 +12,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
   }
 
   return (
-    <div className="min-h-screen bg-background p-4 md:p-8 lg:p-12">
-      <div className="mx-auto max-w-3xl">
+    <div className="min-h-screen bg-background p-4 pb-8 md:p-8 md:pb-0 lg:p-12">
+      <div className="mx-auto max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
