@@ -1,6 +1,4 @@
 import { ImageResponse } from 'next/og'
-import { readFile } from 'fs/promises'
-import path from 'path'
 
 export const size = {
   width: 180,
@@ -9,9 +7,10 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function AppleIcon() {
-  const headshotPath = path.join(process.cwd(), 'public', 'headshot.png')
-  const headshotData = await readFile(headshotPath)
-  const headshotBase64 = `data:image/png;base64,${headshotData.toString('base64')}`
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : 'http://localhost:3000'
+  const headshotUrl = new URL('/headshot.png', baseUrl).toString()
 
   return new ImageResponse(
     (
@@ -26,7 +25,7 @@ export default async function AppleIcon() {
         }}
       >
         <img
-          src={headshotBase64}
+          src={headshotUrl}
           width={160}
           height={160}
           style={{

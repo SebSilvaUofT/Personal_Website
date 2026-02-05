@@ -11,9 +11,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Sebastian Silva - Biomedical Engineer',
+  title: 'Sebastian Silva - Biomedical Engineering',
   description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
-  metadataBase: new URL('https://sebastiansilva.com'),
+  metadataBase: new URL('https://seabass.vercel.app'),
   openGraph: {
     title: 'Sebastian Silva - Biomedical Engineering',
     description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
