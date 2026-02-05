@@ -13,7 +13,7 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
   return (
     <aside className="w-full lg:w-72 lg:sticky lg:top-8 h-fit">
       {/* Profile Image */}
-      <div className="flex flex-col items-center mb-6">
+      <div className="flex flex-col items-start lg:items-center mb-6">
         <motion.div
           className="w-28 h-28 mb-4 rounded-full overflow-hidden"
           initial={{ opacity: 0, scale: 0.96 }}
@@ -28,8 +28,8 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
           />
         </motion.div>
 
-        <motion.h1
-          className="text-xl font-semibold text-foreground mb-1"
+      <motion.h1
+          className="text-xl font-semibold text-foreground mb-1 text-center lg:text-left"
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: itemEase, delay: 0.1 }}
@@ -37,7 +37,7 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
           {data.name}
         </motion.h1>
         <motion.p
-          className="text-sm text-muted-foreground"
+          className="text-sm text-muted-foreground text-center lg:text-left"
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: itemEase, delay: 0.18 }}
