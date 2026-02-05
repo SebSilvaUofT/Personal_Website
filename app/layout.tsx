@@ -14,15 +14,28 @@ export const metadata: Metadata = {
   title: 'Sebastian Silva - Biomedical Engineering',
   description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
   metadataBase: new URL('https://seabass.vercel.app'),
+  icons: {
+    icon: '/headshot-circle.png',
+    apple: '/headshot-circle.png',
+  },
   openGraph: {
     title: 'Sebastian Silva - Biomedical Engineering',
     description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
     type: 'website',
+    images: [
+      {
+        url: '/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Sebastian Silva - MASc Biomedical Engineering',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sebastian Silva - Biomedical Engineering',
     description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
+    images: ['/og.png'],
   },
 }
 
