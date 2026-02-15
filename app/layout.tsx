@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og.png',
+        url: '/linkedinheadshot.JPG',
         width: 1200,
         height: 630,
         alt: 'Sebastian Silva - MASc Biomedical Engineering',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sebastian Silva - Biomedical Engineering',
     description: 'Portfolio of Sebastian Silva, MASc in Biomedical Engineering with expertise in wearable device design and research.',
-    images: ['/og.png'],
+    images: ['/linkedinheadshot.JPG'],
   },
 }
 

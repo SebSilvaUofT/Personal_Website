@@ -15,7 +15,7 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
       {/* Profile Image */}
       <div className="flex flex-col items-start lg:items-center mb-6">
         <motion.div
-          className="w-28 h-28 mb-4 rounded-full overflow-hidden"
+          className="w-44 h-44 mb-4 rounded-full overflow-hidden"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: itemEase }}
@@ -28,7 +28,7 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
           />
         </motion.div>
 
-      <motion.h1
+        <motion.h1
           className="text-xl font-semibold text-foreground mb-1 text-center lg:text-left"
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}

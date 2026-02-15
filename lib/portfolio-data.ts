@@ -1,7 +1,7 @@
 export const profileData = {
   name: 'Sebastian Silva',
   title: 'MASc Biomedical Engineering',
-  avatar: '/headshot.png',
+  avatar: '/linkedinheadshot.JPG',
   email: 'sebastian.silva@mail.utoronto.ca',
   linkedin: 'https://www.linkedin.com/in/sebastian-silva-uoft/',
   location: 'Toronto, Ontario',
@@ -94,19 +94,42 @@ export const projectsData = {
       id: 'wearable-gait-biofeedback',
       title: 'Music-Based Wearable Biofeedback System',
       description: 'Graduate research project developing a wearable biofeedback system to improve lower limb amputee gait symmetry using music-based feedback.',
-      tags: ['Biomedical Engineering', 'Wearable Devices', 'Gait Analysis', 'Research'],
-      fullDescription: `Lower-limb amputees (LLAs) can exhibit asymmetric gait, which may contribute to the development of secondary conditions. Access to conventional gait training is often impeded by factors such as healthcare funding, long travel times, or occupational obligations. This has created a growing interest in technology-based alternatives for in-community gait rehabilitation.
+      tags: ['Biomedical Engineering', 'Wearable Devices', 'Gait Analysis', 'Research', 'Signal Processing', 'Wearable Devices', 'Android', 'Python', 'MATLAB', 'Data Analysis', 'Hardware Prototyping', 'Research & Technical Writing'],
+      fullDescription: `For my MASc thesis, I developed a wearable biofeedback system designed to improve gait symmetry in lower-limb prosthesis users. The project focused on translating biomechanical sensing and signal processing into a practical rehabilitation tool capable of delivering real-time feedback during walking. The goal was to create an engaging system that could measure gait characteristics outside of laboratory settings and encourage corrective movement through responsive feedback.
 
-One such promising technique is the use of wearable biofeedback systems (WBSs) for gait training, with multiple studies utilizing various feedback modalities (visual, auditory, and vibrotactile) to attain positive outcomes for LLA participants, including a more normal gait pattern and improved gait symmetry.
+The system was built around a set of wearable inertial measurement units that captured lower-limb motion during ambulation. Sensor data were processed to estimate temporal gait parameters, including stance timing and symmetry metrics, which were then used to quantify deviations from target walking patterns. Considerable effort went into implementing reliable signal conditioning, coordinate transformations, and algorithmic pipelines that converted raw motion data into stable, interpretable metrics suitable for real-time use.
 
-Within the realm of auditory stimuli, rhythmic auditory stimulus (RAS), and more specifically music, may provide distinct advantages when applied to LLA gait. The entrainment of walking cadence and music tempo is a well-documented phenomenon, with studies having shown that music stimulus can improve the gait symmetry of hemiparetic stroke patients. However, to date, there are no gait training systems that have applied music-based feedback to correct gait asymmetry of LLAs.
+To influence user behavior, the device integrated an auditory feedback mechanism based on rhythmic stimulation principles. Feedback signals were modulated dynamically according to measured gait asymmetry, reinforcing desired movement patterns while maintaining usability and engagement. Software was developed to handle data acquisition, real-time processing, and feedback generation, balancing computational demands with responsiveness.
 
-To address this gap, the goal of this project is to design and validate a wearable biofeedback system that employs a music-based strategy to improve the temporal gait symmetry of LLAs. The physical WBS consists of two inertial sensors to measure cadence and gait symmetry, an Android phone to run the feedback algorithm, and headphones.`,
+The system was evaluated through experimental testing that examined performance, usability, and the ability to detect and respond to gait changes. This work demonstrated how wearable sensing and embedded processing could be combined to deliver interactive rehabilitation feedback, bridging the gap between biomechanics research and practical assistive technology design.
+
+Beyond the technical implementation, the thesis strengthened my experience designing human-centered mechatronic systems — integrating sensing hardware, signal processing, and interactive feedback into a cohesive platform intended for real-world use. The project represented an end-to-end development effort spanning algorithm design, system integration, validation, and user-focused engineering considerations.`,
+      images: ['/biofeedback system.jpg', '/Biofeedback System Overview.png'],
+
+    },
+    {
+      id: 'capstone',
+      title: 'Undergraduate Capstone Project - *SmartShift*',
+      description: 'SmartShift — Effort-Based Bicycle Drivetrain Control System',
+      tags: ['Mechatronic Systems Engineering', 'FEA', 'Strain Gauges', 'Signal Processing', 'Embedded Systems', 'Bluetooth', 'Mobile Interface', 'Microcontroller', 'Servo Motors'],
+      fullDescription: `SmartShift was developed as part of a four-person engineering team to explore a low-cost approach to automatic gear shifting on multi-speed bicycles. Manual gear selection is often inefficient or mistimed, while existing automatic systems are typically expensive and inaccessible to casual riders. Our goal was to design and prototype a lightweight embedded system capable of sensing rider effort and adjusting drivetrain gearing in real time.
+
+We built the system around the idea that gear changes could be driven by estimated rider power. Strain gauges were installed on the crank arm in a Wheatstone bridge configuration to measure applied force, and Finite Element Analysis was used beforehand to determine expected strain ranges and guide sensor modeling in MATLAB/Simulink. Cadence and wheel speed were captured using hall-effect sensors mounted to rotating components, allowing force and cadence data to be combined into a real-time power estimate. Signal conditioning and embedded processing were handled through a microcontroller platform that also supported Bluetooth communication with a simple mobile interface for testing and configuration.
+
+To actuate gear changes, we experimentally measured derailleur cable forces and used those results to select and integrate a servo motor capable of reliably shifting gears. The electronics and actuator were packaged in a frame-mounted housing designed to protect components while maintaining low weight and compatibility with standard bicycle mounting points.
+
+The shifting logic was implemented using a cost-map-based control strategy inspired by automotive transmission scheduling. Rider effort and speed were evaluated continuously to determine optimal gear transitions, with timing constraints added to prevent oscillatory behavior. The system was fabricated and assembled through iterative prototyping, including strain gauge installation, wiring integration, and full-system testing on a mounted bicycle platform.
+
+This project demonstrated the feasibility of combining sensing, embedded control, and mechanical actuation to automate drivetrain behavior in a cost-conscious prototype. It provided hands-on experience translating analytical modeling into physical implementation and integrating mechanical, electrical, and software components into a functional mechatronic system.`,
+      images: [
+        '/capstone-wide-picture.jpg',
+        '/CrankarmLoadAnalysis.png',
+        '/power-meter-closeup.jpg',
+      ],
       details: {
-        event: 'Graduate Student Seminar Series',
-        date: 'September 19, 2025',
-        location: 'MS2158, 1 King\'s College Circle',
-        institution: 'Institute of Biomedical Engineering, University of Toronto',
+        date: 'September 2022 — April 2023',
+        location: 'London, Ontario',
+        institution: 'University of Western Ontario',
       },
     },
   ],

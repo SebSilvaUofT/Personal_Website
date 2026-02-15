@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import { motion } from 'motion/react'
 import { projectsData } from '@/lib/portfolio-data'
+import ReactMarkdown from 'react-markdown'
 
 interface ProjectsSectionProps {
   data?: typeof projectsData
@@ -27,9 +28,11 @@ export function ProjectsSection({ data = projectsData }: ProjectsSectionProps) {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1 min-w-0">
                   <h3 className="font-medium text-foreground group-hover:text-accent transition-colors mb-1">
-                    {project.title}
+                    <ReactMarkdown components={{ p: 'span' }}>{project.title}</ReactMarkdown>
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-3">{project.description}</p>
+                  <div className="text-sm text-muted-foreground mb-3">
+                    <ReactMarkdown components={{ p: 'span' }}>{project.description}</ReactMarkdown>
+                  </div>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag, tagIndex) => (
                       <span
