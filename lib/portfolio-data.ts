@@ -35,15 +35,17 @@ export const aboutData = {
 export const resumeData = {
   education: [
     {
-      title: 'MASc, Biomedical Engineering',
+      title: 'Master of Applied Science',
+      specialization: 'Biomedical Engineering',
       institution: 'University of Toronto',
-      period: '2023 — 2025',
+      period: '2026',
       description: 'Focus on wearable biomedical devices and gait analysis research.',
     },
     {
-      title: 'BESc, Mechatronic Systems Engineering',
+      title: 'Bachelor of Engineering Science',
+      specialization: 'Mechatronic Systems Engineering',
       institution: 'University of Western Ontario',
-      period: '2019 — 2023',
+      period: '2023',
       description: 'With Distinction. Minor in Computer Science.',
     },
   ],
@@ -51,19 +53,25 @@ export const resumeData = {
     {
       title: 'Graduate Research Assistant',
       company: 'PROPEL Lab, Bloorview Research Institute',
-      period: '2023 — 2026',
+      period: 'September 2023 — January 2026',
       description: 'Designed, evaluated, and iterated on a wearable biofeedback device in collaboration with clinicians, technologists, and patients. Developed real-time data processing software for gait parameter extraction from IMU sensor data.',
     },
     {
       title: 'Teaching Assistant',
       company: 'University of Toronto',
-      period: '2024 & 2025',
+      period: 'January — May, 2024 & 2025',
       description: 'Held office hours for Introduction to Computer Science, helping students apply programming concepts. Assisted during lectures of two hundred students.',
     },
     {
       title: 'Building Performance Analyst Intern',
       company: 'Ecovert Sustainability Consultants',
-      period: '2022 & 2023',
+      period: 'May — August, 2022 & 2023',
+      description: 'Developed a web application to support pre-design performance analysis, enabling team members to run, share, and reproduce analyses through a common database.',
+    },
+    {
+      title: 'Design Intern',
+      company: 'Schaeffler Aerospace Canada',
+      period: 'May — December 2021',
       description: 'Developed a web application to support pre-design performance analysis, enabling team members to run, share, and reproduce analyses through a common database.',
     },
   ],

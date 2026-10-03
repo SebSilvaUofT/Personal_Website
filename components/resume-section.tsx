@@ -25,10 +25,11 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
               whileHover={{ x: 4 }}
             >
               <div className="flex flex-col gap-1 mb-2">
-                <div className="flex items-start justify-between gap-4">
-                  <h4 className="font-medium text-foreground flex-1 min-w-0">{item.title}</h4>
-                  <span className="text-sm text-muted-foreground whitespace-nowrap">{item.period}</span>
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+                  <h4 className={`font-medium text-foreground flex-1 min-w-0 ${item.specialization ? 'whitespace-nowrap text-sm sm:text-base' : ''}`}>{item.title}</h4>
+                  <span className="text-sm text-muted-foreground sm:whitespace-nowrap">{item.period}</span>
                 </div>
+                {item.specialization && <p className="text-sm text-muted-foreground">{item.specialization}</p>}
                 <p className="text-sm text-accent">{item.institution}</p>
               </div>
               <p className="text-sm text-muted-foreground">{item.description}</p>
