@@ -15,11 +15,11 @@ export function ContactSection() {
           </p>
           <div className="grid gap-6 sm:grid-cols-2">
             <a
-              href="mailto:alex@example.com"
+              href="mailto:adolfosebastiansilva@gmail.com"
               className="group flex items-center gap-3 text-foreground transition-colors hover:text-muted-foreground"
             >
               <Mail className="size-5" />
-              <span className="text-base md:text-lg">alex@example.com</span>
+              <span className="text-base md:text-lg">adolfosebastiansilva@gmail.com</span>
             </a>
             <a
               href="https://github.com"

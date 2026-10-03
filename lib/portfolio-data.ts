@@ -2,7 +2,7 @@ export const profileData = {
   name: 'Sebastian Silva',
   title: 'MASc Biomedical Engineering',
   avatar: '/linkedinheadshot.JPG',
-  email: 'sebastian.silva@mail.utoronto.ca',
+  email: 'adolfosebastiansilva@gmail.com',
   linkedin: 'https://www.linkedin.com/in/sebastian-silva-uoft/',
   location: 'Toronto, Ontario',
 }
