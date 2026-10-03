@@ -35,9 +35,9 @@ export const aboutData = {
 export const resumeData = {
   education: [
     {
-      title: 'MASc, Biomedical Engineering',
-      institution: 'University of Toronto',
-      period: '2023 — 2025',
+  title: 'MASc, Biomedical Engineering',
+  institution: 'University of Toronto',
+  period: '2023 — 2026',
       description: 'Focus on wearable biomedical devices and gait analysis research.',
     },
     {
