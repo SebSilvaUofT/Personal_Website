@@ -4,7 +4,7 @@ export const profileData = {
   avatar: '/linkedinheadshot.JPG',
   email: 'adolfosebastiansilva@gmail.com',
   linkedin: 'https://www.linkedin.com/in/sebastian-silva-uoft/',
-  location: 'Toronto, Ontario',
+  location: 'Vancouver, British Columbia',
 }
 
 export const aboutData = {
