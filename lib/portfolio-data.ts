@@ -1,5 +1,5 @@
 export const profileData = {
-  name: 'Sebastian Silva',
+  name: 'Sebastian Silva, EIT',
   title: 'MASc Biomedical Engineering',
   avatar: '/linkedinheadshot.JPG',
   email: 'adolfosebastiansilva@gmail.com',
